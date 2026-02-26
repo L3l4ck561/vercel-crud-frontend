@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API = "https://SEU-BACKEND.onrender.com";
+const API = "https://render-crud-backend-pk1j.onrender.com";
 
 function App() {
   const [items, setItems] = useState([]);
