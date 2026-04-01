@@ -9,7 +9,9 @@ function App() {
   const [descricao, setDescricao] = useState('')
   const [editando, setEditando] = useState(null)
 
-  const api = axios.create({ baseURL: '/api' })
+  const api = axios.create({
+    baseURL: import.meta.env.VITE_BACKEND_URL || '/api'
+  })
 
   const carregarTarefas = async () => {
     const res = await api.get('/tarefas')
